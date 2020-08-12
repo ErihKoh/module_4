@@ -169,3 +169,78 @@
 
 // console.log(arrayRemove);
 // // ['Knife', 'Medkit']
+
+// function fakeBin(x) {
+//   const array = [];
+//   for (let i = 0; i < x.length; i += 1) {
+//     x[i] < 5 ? array.push(0) : array.push(1);
+//   }
+//   return console.log(array.join(""));
+// }
+
+// //const x = "45385593107843568";
+// //const x = "509321967506747";
+// //const x = "366058562030849490134388085";
+
+// fakeBin("45385593107843568");
+// fakeBin("509321967506747");
+// fakeBin("366058562030849490134388085");
+
+// function fakeBin(x) {
+//   return x
+//     .split("")
+//     .map((a) => (a < "5" ? "0" : "1"))
+//     .join("");
+// }
+
+// function checkExam(array1, array2) {
+//   var score = 0;
+
+//   for (var i = 0; i < array1.length; i++) {
+//     if (array1[i] == array2[i]) {
+//       score += 4;
+//     } else if (array2[i] === "") {
+//       score += 0;
+//     } else {
+//       score -= 1;
+//     }
+//   }
+
+//   if (score < 0) {
+//     score = 0;
+//   }
+
+//   return score;
+// }
+
+// function findMultiples(int, limit) {
+//   let result = [];
+
+//   for (let i = int; i <= limit; i += int) result.push(i);
+
+//   return result;
+// }
+
+// console.log(findMultiples(5, 25));
+
+// function alternateCase(s) {
+//   const array = s.split("");
+//   const arra1 = [];
+//   for (let i = 0; i < array.length; i += 1) {
+//     let element = array[i];
+//     if (element === element.toLowerCase()) {
+//       arra1.push(element.toUpperCase());
+//     } else arra1.push(element.toLowerCase());
+//   }
+//   return console.log(arra1.join(""));
+// }
+
+// //   s[i] === toLowerCase(s[i]) ? toUpperCase() : toLowerCase();
+// // }
+// alternateCase("Hello World");
+
+// function dutyFree(normPrice, discount, hol) {
+//   let discountCash = (normPrice / 100) * discount;
+//   return Math.floor(hol / discountCash);
+// }
+// console.log(dutyFree(17, 10, 500));
