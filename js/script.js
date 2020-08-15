@@ -244,3 +244,20 @@
 //   return Math.floor(hol / discountCash);
 // }
 // console.log(dutyFree(17, 10, 500));
+
+// function wordPattern(word) {
+//   const arr = word.split("");
+//   const arr1 = [];
+//   let index = 0;
+//   for (let i = 0; i < arr.length; i += 1) {
+//     index = arr.indexOf(arr[i]);
+//     arr1.push(index);
+//   }
+//   return arr1;
+// }
+// console.log(wordPattern("hello"));
+
+const sample = [1, 2, 3];
+
+let sum = sample.reduce((sum, elem) => sum + elem);
+console.log(sum);
